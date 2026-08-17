@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="maven-antrun-" default="main">
+  <target name="main">
+    <mkdir dir="D:\devops\ci-jenkins-multi-build-demo\target/test-classes" />
+    <javac includeantruntime="false" classpath="D:\devops\ci-jenkins-multi-build-demo\target\classes" destdir="D:\devops\ci-jenkins-multi-build-demo\target\test-classes" srcdir="D:\devops\ci-jenkins-multi-build-demo\src\test\java" source="21" target="21" />
+    <java fork="true" classname="com.vit.demo.AppTest" classpath="D:\devops\ci-jenkins-multi-build-demo\target\classes;D:\devops\ci-jenkins-multi-build-demo\target\test-classes" failonerror="true" />
+  </target>
+</project>
